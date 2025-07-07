@@ -1,0 +1,130 @@
+
+/* ==== Base Styling ==== */
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    padding: 24px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ffffff;
+    margin: 1.5em 0 0.5em;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.3em;
+}
+
+/* Paragraph */
+p {
+    margin: 0.5em 0;
+}
+
+/* Code Blocks */
+code, pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 0.5em;
+    font-family: "Fira Code", monospace;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* Inline code */
+code {
+    padding: 0.2em 0.4em;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #888;
+    padding-left: 1em;
+    color: #bbbbbb;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 1em 0;
+}
+
+th {
+    background-color: #2a2a2a;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #555 !important;
+    padding: 10px 14px !important;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Inline code in table cells - fixed alignment */
+td code, th code {
+    background-color: #333 !important;
+    color: #ffb86c !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    display: inline;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* Links */
+a {
+    color: #4ea1f3;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 2em 0;
+}
+
+/* === PDF Export Styling === */
+@media print {
+    .exported-note-title {
+        display: none !important;
+    }
+
+    @page {
+        margin: 0 !important;
+    }
+
+    body {
+        margin: 0 !important;
+        padding: 24px !important;
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+    }
+
+    header, footer {
+        display: none !important;
+    }
+
+    table, th, td {
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+        border: 1px solid #444 !important;
+    }
+
+    code, pre {
+        background-color: #2d2d2d !important;
+        color: #f8f8f2 !important;
+    }
+}
